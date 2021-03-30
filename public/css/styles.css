@@ -165,7 +165,7 @@ h3,
 }
 
 .description {
-    display: none;                      /* ocultamos el texto description */
+    display: none;                      /* Ocultamos el texto description */
     margin-top: 20px;
     transition: all 300ms;
 }
@@ -176,15 +176,22 @@ main section article:hover h4.description { display: block; }
 
 section.banner img { width: 100%; }
 
+/* Estilos Main de login y register */
+main { margin-top: 250px !important; }      /* Con !important le decimos al navegador que esta propiedad es importante no sea pisada */
+
+/* Estilos Main Index */
+main.index { margin-top: initial; }
+
+div.last-visit,
 main {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto;                 /* Esta propiedad pisaría el margin de arriba.  */
 }
 
 main section article {
     background-color: #fff;    
     margin: 10px 0px;
-    transition: box-shadow 500ms;       /* definimos transition de medio segundo para los cambios de propiedad bpx-shadow */
+    transition: box-shadow 500ms;       /* Definimos transition de medio segundo para los cambios de propiedad bpx-shadow */
 }
 
 main section article img { width: 100%; }

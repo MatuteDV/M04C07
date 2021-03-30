@@ -2,7 +2,12 @@
 Aplicando algunas propiedades de CSS del contenido de M04C07 - Organizando y animando elementos.
 
 
-git clone https://github.com/MatuteDV/M04C07
-cd M04C07
-npm i
-npm run startdev
+1- git clone https://github.com/MatuteDV/M04C07
+
+2 - cd M04C07
+
+3 - npm i
+
+4 - npm run startdev
+
+5 - Abrir un navegador en http://localhost:3000/

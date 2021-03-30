@@ -1,23 +1,39 @@
 position:
+--------
     Static                      Valor por defecto.
+
     Relative                    No cambia nada para si mismo al elemento que lo aplicamos, a menos apliquemos cambio de posición.
                                 No se sale del flujo de la web. (No cambia su contexto)
                                 Referencia: Su posición original en el flujo de la web. 
+                            (Ej: ver web el texto ¨Comprá en cuotas y sin tarjeta de crédito¨)
+
     Absolute                    Referencia: Primer elemento contenedor con position diferente a static. 
                                 Deja de ocupar espacio en el flujo de la web. (Cambia al contexto del contenedor de refernecia)
+
     Fixed                       Referencia: Viewport. Se sale del flujo de la web.
+                            (Ej: ver en web el header)
+
     Sticky                      Cambia entre relative a fixed cuando alcanza la posición indicada respecto al Viewport.
 
 z-index:                        Capa en la que se aplicará renderizado. 
+--------
 
 Selector :hover                 Especificamos propiedades de css a elementos para cuando el mouse esté por encima del elemento. 
+----------------            (Ej: ver web botón de menú y logo)
 
 Transition:                     Podemos especificar el tiempo que tardará un elemento en alcanzar nuevas propiedades de estilo.
-                                (
+-----------                     (
                                     Sólo en propiedades que posean valores intermedio aplicables. 
                                     EJ:     Tamaño y posición, si aplica. 
                                             Display, No aplica, No posee valores intermedios.
                                 )
+                            (Ej: ver en web botón de menú y tarjetas de productos)
+
+
+keyframe
+---------
+(Ej: ver en web el texto ¨Comprá en cuotas y sin tarjeta de crédito¨ y logo al hacer :hover)
+
 
 Definimos un keyframe. Se define una animación y se le asigna un nombre. 
     Para esto definimos los pasos que posea (los que querramos), indicados en porcentaje.

@@ -3,4 +3,6 @@ Aplicando algunas propiedades de CSS del contenido de M04C07 - Organizando y ani
 
 
 git clone https://github.com/MatuteDV/M04C07
-
+cd M04C07
+npm i
+npm run startdev

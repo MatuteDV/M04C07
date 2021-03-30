@@ -1,0 +1,38 @@
+position:
+    Static                      Valor por defecto.
+    Relative                    No cambia nada para si mismo al elemento que lo aplicamos, a menos apliquemos cambio de posición.
+                                No se sale del flujo de la web. (No cambia su contexto)
+                                Referencia: Su posición original en el flujo de la web. 
+    Absolute                    Referencia: Primer elemento contenedor con position diferente a static. 
+                                Deja de ocupar espacio en el flujo de la web. (Cambia al contexto del contenedor de refernecia)
+    Fixed                       Referencia: Viewport. Se sale del flujo de la web.
+    Sticky                      Cambia entre relative a fixed cuando alcanza la posición indicada respecto al Viewport.
+
+z-index:                        Capa en la que se aplicará renderizado. 
+
+Selector :hover                 Especificamos propiedades de css a elementos para cuando el mouse esté por encima del elemento. 
+
+Transition:                     Podemos especificar el tiempo que tardará un elemento en alcanzar nuevas propiedades de estilo.
+                                (
+                                    Sólo en propiedades que posean valores intermedio aplicables. 
+                                    EJ:     Tamaño y posición, si aplica. 
+                                            Display, No aplica, No posee valores intermedios.
+                                )
+
+Definimos un keyframe. Se define una animación y se le asigna un nombre. 
+    Para esto definimos los pasos que posea (los que querramos), indicados en porcentaje.
+    Dentro de cada paso definimos que propiedades de css queremos que adopte.
+
+    @keyframe nombreKeyFrame {
+        0% { propiedades }
+        50% { propiedades }
+        100% { propiedades }
+    }
+
+
+Aplicamos la animación al elemento que queremos animar. Es posible aplicarlo en un estado diferente como :hover, :focus, etc. 
+    .animar {
+        animation: nombreKeyFrame duracion loop ;
+    }
+
+
